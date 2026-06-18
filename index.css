@@ -2408,7 +2408,6 @@ a {
 /* UI Grid specifics - larger layouts */
 .ui-grid .gallery-card {
   grid-column: span 6;
-  aspect-ratio: 16 / 10;
 }
 
 .ui-grid .gallery-card-media {
