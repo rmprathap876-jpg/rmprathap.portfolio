@@ -600,7 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'UI/UX Design • Mobile App',
       heroImg: 'assets/images/Shoppie.png',
       client: 'Boutique Retail Startup',
-      timeline: '6 Weeks (2025)',
+      timeline: '1 Month (2025)',
       role: 'Lead UI/UX Designer',
       tools: 'Figma, Canva, Prototyping',
       overview: 'Shoppie is a social-centered mobile shopping application designed to bridge the gap between local retail discovery and online purchasing. The app transforms a lonely ecommerce path into a shared digital activity by introducing custom sharing boards, integrated vendor maps, and social-checkout elements.',
@@ -620,9 +620,9 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'UI/UX Design • Civic Portal',
       heroImg: 'assets/images/TVK.png',
       client: 'Civic Initiative',
-      timeline: '4 Weeks (2025)',
+      timeline: '1 Month (2025)',
       role: 'UI/UX Designer',
-      tools: 'Figma, Adobe Photoshop',
+      tools: 'Figma, Google Stitch',
       overview: 'TVK is a community engagement and citizen communication mobile interface. It simplifies civic interaction by bringing local announcements, official initiative timelines, municipal task workflows, and community success stories under one highly legible dashboard.',
       problem: 'Citizens face immense information barriers. Official updates are scattered across press outlets and PDF files, leading to civic disengagement and misinformation.',
       research: 'A localized survey showed that 72% of citizens obtain public details from unverified social circles. Users expressed frustration over navigation complexity when looking up municipal works or local development trackers.',
@@ -680,6 +680,244 @@ document.addEventListener('DOMContentLoaded', () => {
   const caseStudyOverlay = document.getElementById('case-study-overlay');
   const caseStudyContent = document.getElementById('case-study-content');
   const closeCaseStudyBtn = document.getElementById('close-case-study');
+
+  const getShoppieHTML = () => `
+    <div class="shoppie-cs">
+      <div class="shoppie-section shoppie-hero shoppie-bg-black">
+        <span class="case-study-type" style="display: block; margin-bottom: 1rem;">UI/UX DESIGN • MOBILE E-COMMERCE APP</span>
+        <h1 class="shoppie-main-title serif-font" style="margin-top: 0; margin-bottom: 3rem;">Shoppie</h1>
+        <div class="shoppie-hero-mockup">
+           <img src="assets/images/Shoppie.png" alt="Shoppie Mockup">
+        </div>
+      </div>
+      <div class="shoppie-divider"></div>
+      <div class="shoppie-meta-grid shoppie-bg-black">
+         <div><div class="shoppie-meta-label">ROLE</div><div class="shoppie-meta-value">Lead UI/UX Designer</div></div>
+         <div><div class="shoppie-meta-label">TIMELINE</div><div class="shoppie-meta-value">1 Month</div></div>
+         <div><div class="shoppie-meta-label">TOOLS</div><div class="shoppie-meta-value">Figma, Canva, Prototyping</div></div>
+         <div><div class="shoppie-meta-label">UI FRAMES</div><div class="shoppie-meta-value">15 Mobile Frames</div></div>
+      </div>
+      <div class="shoppie-divider"></div>
+      
+      <div class="shoppie-section shoppie-bg-black">
+        <div class="shoppie-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Project <br><i>Overview</i></h2>
+          </div>
+          <div class="col-right">
+            <p><strong>Shoppie</strong> is a modern mobile e-commerce platform designed for seamless fashion and clothing shopping. The project features 15 highly polished mobile frames in Figma, creating an accessible, intuitive, and engaging shopping flow.</p>
+            <p>The UI is designed to be extremely user-friendly, allowing customers to easily browse, select, and purchase clothing items with zero friction.</p>
+            <a href="https://www.figma.com/proto/lvTFAJJiKW7V5f2c04gDTK/Shoppie?node-id=0-1&t=OveBTRddfq3EuVJd-1" class="shoppie-link serif-font" target="_blank">Figma Link : https://www.figma.com/proto/lvTFAJJiKW7V5f2c04gDTK/Shoppie</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="shoppie-section shoppie-bg-black">
+        <div class="shoppie-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Brand <br><i>Color Palette</i></h2>
+          </div>
+          <div class="col-right">
+            <p>The visual design leverages rich, vibrant colors tailored for fashion retail, set against a dark theme to make apparel textures pop:</p>
+            <div class="shoppie-color-palette" style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+              <div class="shoppie-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #7C4DFF; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Royal Violet</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#7C4DFF</div>
+              </div>
+              <div class="shoppie-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #FF4081; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Neon Pink</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#FF4081</div>
+              </div>
+              <div class="shoppie-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #121212; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Charcoal Black</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#121212</div>
+              </div>
+              <div class="shoppie-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #FFFFFF; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Pure White</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#FFFFFF</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="shoppie-divider"></div>
+
+      <div class="shoppie-pillars shoppie-bg-black">
+         <div class="shoppie-pillar-card">
+           <h3 class="serif-font" style="color: #FF4081;">Scrolling Offers</h3>
+           <p class="serif-font">The Home page features a dynamic, auto-scrolling promo carousel at the top, immediately drawing users' attention to active seasonal discounts and fashion flash sales.</p>
+         </div>
+         <div class="shoppie-pillar-card">
+           <h3 class="serif-font" style="color: #FF4081;">Purchase History</h3>
+           <p class="serif-font">A dedicated space listing all past clothing purchases. Users can quickly review items, re-order favorites, and manage invoices with one tap.</p>
+         </div>
+         <div class="shoppie-pillar-card">
+           <h3 class="serif-font" style="color: #FF4081;">Track Order</h3>
+           <p class="serif-font">An integrated tracking layout enabling users to monitor their active package status, showing courier transit checkpoints, delivery times, and maps.</p>
+         </div>
+      </div>
+
+      <div class="shoppie-divider"></div>
+
+      <div class="shoppie-section shoppie-bg-black">
+        <div class="shoppie-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Detailed <br><i>Profile Section</i></h2>
+          </div>
+          <div class="col-right">
+            <p>Shoppie includes a highly customized <strong>Profile Page</strong>. This profile contains extensive settings and details, separating user options logically into sections: saved address books, personalized clothing sizes, security settings, payment methods, and reward points.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="shoppie-divider"></div>
+
+      <div class="shoppie-section shoppie-bg-black">
+        <div class="shoppie-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Design <br><i>Philosophy</i></h2>
+          </div>
+          <div class="col-right">
+            <div style="padding: 2rem; background-color: #151515; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 1.5rem; text-align: left;">
+              <h4 style="color: #FF4081; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem;">Clean E-Commerce Flow</h4>
+              <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #ccc;">By dividing pages into distinct task modules (e.g. separate profile, purchase history, and tracking panels) and introducing interactive scrolling promo banners, the user flow becomes highly accessible and reduces conversion drop-off.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const getTVKHTML = () => `
+    <div class="tvk-cs">
+      <div class="tvk-section tvk-hero tvk-bg-black">
+        <span class="case-study-type" style="display: block; margin-bottom: 1rem;">UI/UX DESIGN • MOBILE APPLICATION</span>
+        <h1 class="tvk-main-title serif-font" style="margin-top: 0; margin-bottom: 3rem;">TVK - Tamilaga Vetri Kondan</h1>
+        <div class="tvk-hero-mockup">
+           <img src="assets/images/TVK.png" alt="TVK Mockup">
+        </div>
+      </div>
+      <div class="tvk-divider"></div>
+      <div class="tvk-meta-grid tvk-bg-black">
+         <div><div class="tvk-meta-label">ROLE</div><div class="tvk-meta-value">UI/UX Designer</div></div>
+         <div><div class="tvk-meta-label">TIMELINE</div><div class="tvk-meta-value">1 Month</div></div>
+         <div><div class="tvk-meta-label">TOOLS</div><div class="tvk-meta-value">Figma, Google Stitch</div></div>
+         <div><div class="tvk-meta-label">UI DESIGN</div><div class="tvk-meta-value">User-Friendly (Easy to Understand)</div></div>
+      </div>
+      <div class="tvk-divider"></div>
+      
+      <div class="tvk-section tvk-bg-black">
+        <div class="tvk-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Project <br><i>Overview</i></h2>
+          </div>
+          <div class="col-right">
+            <p><strong>Tamilaga Vetri Kondan (TVK)</strong> is an intuitive mobile application designed to bridge the gap between citizens and community services. It enables members to connect, stay informed with the latest news, apply for essential public documents, and track their application status on the go.</p>
+            <p>The interface is crafted with a highly clean and user-friendly UI layout, making it extremely easy for users of all age groups to navigate and understand without any technical barriers.</p>
+            <a href="https://www.figma.com/proto/JybcBMjgIBnt25FESCbdTp/TVK?node-id=1-2&t=71Pl7Xk0nMcxY2ld-1" class="tvk-link serif-font" target="_blank">Figma Link : https://www.figma.com/proto/JybcBMjgIBnt25FESCbdTp/TVK</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tvk-section tvk-bg-black">
+        <div class="tvk-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Brand <br><i>Color Palette</i></h2>
+          </div>
+          <div class="col-right">
+            <p>The application employs a signature color scheme that reflects community strength, leadership, and trust, drawing inspiration from party colors:</p>
+            <div class="tvk-color-palette" style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+              <div class="tvk-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #8B0000; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Primary Red</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#8B0000</div>
+              </div>
+              <div class="tvk-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #FFD700; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Golden Yellow</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#FFD700</div>
+              </div>
+              <div class="tvk-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #1A1A1A; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Dark Slate</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#1A1A1A</div>
+              </div>
+              <div class="tvk-color-swatch" style="text-align: center; min-width: 80px;">
+                <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #FFFFFF; margin: 0 auto 0.5rem; border: 2px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.9rem; display: block;">Pure White</strong>
+                <div style="font-size: 0.8rem; color: #aaa;">#FFFFFF</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tvk-divider"></div>
+
+      <div class="tvk-pillars tvk-bg-black">
+         <div class="tvk-pillar-card">
+           <h3 class="serif-font" style="color: #FFD700;">Home & News</h3>
+           <p class="serif-font">A dedicated hub showcasing public updates, official announcements, success stories, and local event listings to keep citizens connected in real time.</p>
+         </div>
+         <div class="tvk-pillar-card">
+           <h3 class="serif-font" style="color: #FFD700;">Document Apply</h3>
+           <p class="serif-font">A secure online application panel where users can apply for key certificates and documents such as Aadhaar Card, Birth Certificate, and more.</p>
+         </div>
+         <div class="tvk-pillar-card">
+           <h3 class="serif-font" style="color: #FFD700;">Status Check</h3>
+           <p class="serif-font">An integrated tracking timeline where citizens can instantly check the real-time processing status of their submitted document applications.</p>
+         </div>
+      </div>
+
+      <div class="tvk-divider"></div>
+
+      <div class="tvk-section tvk-bg-black">
+        <div class="tvk-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Member <br><i>ID Card Profile</i></h2>
+          </div>
+          <div class="col-right">
+            <p>To establish identity and community pride, the TVK app contains a personalized <strong>Profile Page</strong>. Upon membership verification, it dynamically displays the verified <strong>TVK Member ID Card</strong> with member details, QR code, and official verification badges.</p>
+            <div class="tvk-id-card-preview" style="margin-top: 2rem; padding: 2rem; border-radius: 16px; background: linear-gradient(135deg, #2a0000 0%, #110000 100%); border: 1.5px solid #FFD700; max-width: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,215,0,0.3); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                <h4 style="margin: 0; color: #FFD700; font-family: var(--font-accent);">TAMILAGA VETRI KONDAN</h4>
+                <span style="font-size: 0.7rem; padding: 2px 8px; background-color: #8B0000; color: #fff; border-radius: 20px; font-weight: 700;">MEMBER</span>
+              </div>
+              <div style="display: flex; gap: 1.5rem; align-items: center;">
+                <div style="width: 80px; height: 100px; background-color: #333; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.8rem;">PHOTO</div>
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.9rem;">
+                  <div><strong style="color: #aaa; font-size: 0.75rem;">NAME:</strong> PRATHAP R M</div>
+                  <div><strong style="color: #aaa; font-size: 0.75rem;">MEMBER ID:</strong> TVK-2026-8769</div>
+                  <div><strong style="color: #aaa; font-size: 0.75rem;">VERIFIED DATE:</strong> 06-07-2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tvk-divider"></div>
+
+      <div class="tvk-section tvk-bg-black">
+        <div class="tvk-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Design <br><i>Philosophy</i></h2>
+          </div>
+          <div class="col-right">
+            <div style="padding: 2rem; background-color: #151515; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 1.5rem; text-align: left;">
+              <h4 style="color: #FFD700; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem;">User-Friendly Accessibility</h4>
+              <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #ccc;">Designed with clean grids, bold fonts, and intuitive icons to ensure that even users with minimal smartphone experience can easily apply for documents, check news, and find their ID card instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
 
   const getSaharaPizzaHTML = () => `
     <div class="sahara-cs">
@@ -850,6 +1088,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (id === 'sahara-pizza') {
       caseStudyOverlay.classList.add('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyOverlay.classList.remove('shoppie-mode');
       caseStudyContent.innerHTML = getSaharaPizzaHTML();
       body.style.overflow = 'hidden';
       
@@ -879,8 +1119,38 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       return;
+    } else if (id === 'tvk') {
+      caseStudyOverlay.classList.add('tvk-mode');
+      caseStudyOverlay.classList.remove('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('shoppie-mode');
+      caseStudyContent.innerHTML = getTVKHTML();
+      body.style.overflow = 'hidden';
+      
+      setTimeout(() => {
+        caseStudyOverlay.classList.add('open');
+      }, 50);
+      
+      closeCaseStudyBtn.setAttribute('data-cursor-badge', 'CLOSE');
+      bindCursorStates();
+      return;
+    } else if (id === 'shoppie') {
+      caseStudyOverlay.classList.add('shoppie-mode');
+      caseStudyOverlay.classList.remove('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyContent.innerHTML = getShoppieHTML();
+      body.style.overflow = 'hidden';
+      
+      setTimeout(() => {
+        caseStudyOverlay.classList.add('open');
+      }, 50);
+      
+      closeCaseStudyBtn.setAttribute('data-cursor-badge', 'CLOSE');
+      bindCursorStates();
+      return;
     } else {
       caseStudyOverlay.classList.remove('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyOverlay.classList.remove('shoppie-mode');
     }
 
     // Build Case Study HTML
@@ -976,6 +1246,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeCaseStudy = () => {
     caseStudyOverlay.classList.remove('open');
+    setTimeout(() => {
+      caseStudyOverlay.classList.remove('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyOverlay.classList.remove('shoppie-mode');
+    }, 500);
     // Restore scrolling based on active view
     if (introReveal.style.transform === 'translateY(-100vh)') {
       body.style.overflow = '';
@@ -988,9 +1263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => {
       card.addEventListener('click', () => {
         const id = card.getAttribute('data-project-id');
-        if (id === 'shoppie') {
-          card.classList.toggle('flipped');
-        } else if (id && id !== 'tvk' && id !== 'fashion-club') {
+        if (id && id !== 'fashion-club') {
           openCaseStudy(id);
         }
       });
