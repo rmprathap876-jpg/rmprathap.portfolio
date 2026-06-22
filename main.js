@@ -674,6 +674,26 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       outcome: 'Created a stunning, award-worthy interface design that emphasizes visual space, clean alignment, and brand sophistication.',
       reflection: 'Designing minimal interfaces requires absolute precision; when there are few elements, spacing and typography weights must be perfect.'
+    },
+    'room-theory': {
+      title: 'Room Theory',
+      category: 'UI/UX Design • Two Themes',
+      heroImg: 'assets/images/room theory 2.png',
+      client: 'Interior Design Platform',
+      timeline: '1 Day',
+      role: 'UI/UX Designer',
+      tools: 'Figma, Prototyping',
+      overview: 'Room Theory is a spatial planning and interior design platform homepage. This project focuses specifically on the Home Page design in two distinct theme variations—a Light Warm Editorial theme (wood and cream) and a Dark Muted Earthy theme (sandstone and olive). Both themes are designed to be exceptionally clear, intuitive, and extremely easy for users to understand at a single glance.',
+      problem: 'Most home decoration tools default to a single layout theme, which fails to capture how a client\'s space looks under different light and color tones.',
+      research: 'Our study showed that users are highly visual when making interior decisions. Over 85% of users prefer to compare dark and light themes of a layout side-by-side to understand how furniture textures interact with background colors.',
+      solution: 'We developed two customized design themes with distinct color palettes. Theme 1 is a light, warm cream palette emphasizing natural light and deep oak accents. Theme 2 is a dark, muted earthy palette emphasizing intimate lighting and warm stone tones. Each theme has a direct interactive Figma prototype link.',
+      process: [
+        { name: 'Color Consultation', desc: 'Identified wood-heavy and stone-heavy tones that evoke high-end residential luxury.' },
+        { name: 'Wireframe Layouts', desc: 'Designed a spacious homepage structure highlighting furniture items, catalog grids, and typography details.' },
+        { name: 'Double Theme Implementation', desc: 'Configured light and dark theme prototypes to demonstrate spatial adaptability.' }
+      ],
+      outcome: 'A dual-concept homepage design that showcases how identical UI wireframes look under entirely different aesthetic vibes.',
+      reflection: 'Designing two themes for the same interface highlights how color and tone shift user perception of space and luxury.'
     }
   };
 
@@ -1082,6 +1102,139 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   `;
 
+  const getRoomTheoryHTML = () => `
+    <div class="room-theory-cs">
+      <div class="room-theory-section room-theory-hero room-theory-bg-black">
+        <span class="case-study-type" style="display: block; margin-bottom: 1rem;">UI/UX DESIGN • WEB UI</span>
+        <h1 class="room-theory-main-title serif-font" style="margin-top: 0; margin-bottom: 3rem;">Room Theory</h1>
+        <div class="room-theory-hero-split" style="display: flex; gap: 2rem; margin-bottom: 2rem; justify-content: center; align-items: stretch; flex-wrap: wrap;">
+          <div class="theme-hero-col" style="flex: 1; min-width: 280px; text-align: center; background: #121212; padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);">
+            <h3 class="serif-font" style="color: #CDCAC5; margin-top: 0;">Theme 1: Light Warm</h3>
+            <img src="assets/images/room theory 1.png" alt="Room Theory Light Theme" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+          </div>
+          <div class="theme-hero-col" style="flex: 1; min-width: 280px; text-align: center; background: #121212; padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);">
+            <h3 class="serif-font" style="color: #928E83; margin-top: 0;">Theme 2: Dark Muted</h3>
+            <img src="assets/images/room theory 2.png" alt="Room Theory Dark Theme" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+          </div>
+        </div>
+      </div>
+      <div class="room-theory-divider"></div>
+      <div class="room-theory-meta-grid room-theory-bg-black">
+         <div><div class="room-theory-meta-label">ROLE</div><div class="room-theory-meta-value">UI/UX Designer</div></div>
+         <div><div class="room-theory-meta-label">TIMELINE</div><div class="room-theory-meta-value">1 Day</div></div>
+         <div><div class="room-theory-meta-label">TOOLS</div><div class="room-theory-meta-value">Figma, Prototyping</div></div>
+         <div><div class="room-theory-meta-label">THEMES</div><div class="room-theory-meta-value">Light Warm & Dark Muted</div></div>
+      </div>
+      <div class="room-theory-divider"></div>
+      
+      <div class="room-theory-section room-theory-bg-black">
+        <div class="room-theory-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Project <br><i>Overview</i></h2>
+          </div>
+          <div class="col-right">
+            <p><strong>Room Theory</strong> is a luxury interior design homepage concept designed to be exceptionally intuitive and extremely easy for users to navigate and understand. This project focuses solely on the <strong>Home Page design</strong>, presenting it in two distinct theme variations: <strong>Light Warm Editorial</strong> and <strong>Dark Muted Earthy</strong>.</p>
+            <p>Both themes are homepage-only designs, carefully optimized for visual clarity to ensure that users can effortlessly grasp the spatial layout, product hierarchy, and aesthetic vibe without any complexity.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- THEME 1 SECTION -->
+      <div class="room-theory-divider"></div>
+      <div class="room-theory-section room-theory-bg-black" style="background: rgba(205, 202, 197, 0.05); padding: 3rem; border-radius: 16px;">
+        <div class="room-theory-2col">
+          <div class="col-left">
+            <h2 class="serif-font" style="color: #CDCAC5; margin: 0;">Theme 1<br><i style="color: #584838;">Light Warm</i></h2>
+            <div class="room-theory-color-palette" style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #CDCAC5; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Warm Cream</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#CDCAC5</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #584838; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Oak Brown</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#584838</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #705848; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Warm Clay</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#705848</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #C4C1BC; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Dune Sand</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#C4C1BC</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-right">
+            <p>The <strong>Light Warm Theme</strong> focuses on natural illumination, spaciousness, and editorial breathing room. It is inspired by soft morning light filtering through linen curtains, utilizing warm creams and deep wood oak colors to evoke cozy Scandinavian interiors.</p>
+            <p style="margin-bottom: 2rem;">Accents of forest oak and warm clay anchor the layout, making the minimalist text highly legible and professional.</p>
+            <a href="https://www.figma.com/proto/9jJSAunVUG41zqbtXMV4EK/Room-theory?node-id=72-91&t=VBhzMvwWTVSDt0jJ-1" class="room-theory-link serif-font" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background-color: #584838; color: #fff; padding: 0.8rem 1.8rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.85rem; letter-spacing: 0.05em; transition: 0.3s ease;">
+              View Light Theme Prototype &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THEME 2 SECTION -->
+      <div class="room-theory-divider"></div>
+      <div class="room-theory-section room-theory-bg-black" style="background: rgba(146, 142, 131, 0.05); padding: 3rem; border-radius: 16px;">
+        <div class="room-theory-2col">
+          <div class="col-left">
+            <h2 class="serif-font" style="color: #928E83; margin: 0;">Theme 2<br><i style="color: #a09080;">Dark Muted</i></h2>
+            <div class="room-theory-color-palette" style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #928E83; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Sage Gray</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#928E83</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #A09080; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Sandstone</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#A09080</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #8C8070; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Earthy Umber</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#8C8070</div>
+              </div>
+              <div class="room-theory-color-swatch" style="text-align: center; min-width: 70px;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #887868; margin: 0 auto 0.5rem; border: 1.5px solid rgba(255,255,255,0.2);"></div>
+                <strong style="font-size: 0.8rem; display: block; color: #fff;">Warm Basalt</strong>
+                <div style="font-size: 0.75rem; color: #aaa;">#887868</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-right">
+            <p>The <strong>Dark Muted Theme</strong> emphasizes intimate lighting, earthy luxury, and sophisticated architectural depth. It is inspired by basalt stones, sage leaves, and dark desert sandstone, bringing a premium, tactile quality to modern spaces.</p>
+            <p style="margin-bottom: 2rem;">Muted clay and gray olive tones reduce eye fatigue and make high-contrast furniture images pop, creating a highly premium presentation.</p>
+            <a href="https://www.figma.com/proto/9jJSAunVUG41zqbtXMV4EK/Room-theory?node-id=1-2&t=VBhzMvwWTVSDt0jJ-1" class="room-theory-link serif-font" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; background-color: #A09080; color: #fff; padding: 0.8rem 1.8rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.85rem; letter-spacing: 0.05em; transition: 0.3s ease;">
+              View Dark Theme Prototype &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="room-theory-divider"></div>
+      
+      <div class="room-theory-section room-theory-bg-black">
+        <div class="room-theory-2col">
+          <div class="col-left">
+            <h2 class="serif-font">Design <br><i>Philosophy</i></h2>
+          </div>
+          <div class="col-right">
+            <div style="padding: 2rem; background-color: #151515; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 1.5rem; text-align: left;">
+              <h4 style="color: #CDCAC5; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem;">Tone-Based Spatial Adaptability</h4>
+              <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #ccc;">By building a design system where background and accent values can swap smoothly (maintaining contrast and font weights), we allow users to explore how living room designs adapt to different atmospheric vibes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
   const openCaseStudy = (id) => {
     const data = caseStudies[id];
     if (!data) return;
@@ -1137,7 +1290,23 @@ document.addEventListener('DOMContentLoaded', () => {
       caseStudyOverlay.classList.add('shoppie-mode');
       caseStudyOverlay.classList.remove('sahara-pizza-mode');
       caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyOverlay.classList.remove('room-theory-mode');
       caseStudyContent.innerHTML = getShoppieHTML();
+      body.style.overflow = 'hidden';
+      
+      setTimeout(() => {
+        caseStudyOverlay.classList.add('open');
+      }, 50);
+      
+      closeCaseStudyBtn.setAttribute('data-cursor-badge', 'CLOSE');
+      bindCursorStates();
+      return;
+    } else if (id === 'room-theory') {
+      caseStudyOverlay.classList.add('room-theory-mode');
+      caseStudyOverlay.classList.remove('sahara-pizza-mode');
+      caseStudyOverlay.classList.remove('tvk-mode');
+      caseStudyOverlay.classList.remove('shoppie-mode');
+      caseStudyContent.innerHTML = getRoomTheoryHTML();
       body.style.overflow = 'hidden';
       
       setTimeout(() => {
@@ -1151,6 +1320,7 @@ document.addEventListener('DOMContentLoaded', () => {
       caseStudyOverlay.classList.remove('sahara-pizza-mode');
       caseStudyOverlay.classList.remove('tvk-mode');
       caseStudyOverlay.classList.remove('shoppie-mode');
+      caseStudyOverlay.classList.remove('room-theory-mode');
     }
 
     // Build Case Study HTML
@@ -1250,6 +1420,7 @@ document.addEventListener('DOMContentLoaded', () => {
       caseStudyOverlay.classList.remove('sahara-pizza-mode');
       caseStudyOverlay.classList.remove('tvk-mode');
       caseStudyOverlay.classList.remove('shoppie-mode');
+      caseStudyOverlay.classList.remove('room-theory-mode');
     }, 500);
     // Restore scrolling based on active view
     if (introReveal.style.transform === 'translateY(-100vh)') {
