@@ -3923,3 +3923,95 @@ a {
   margin-top: 0.5rem;
 }
 
+/* ROOM THEORY CUSTOM CASE STUDY OVERLAY */
+.case-study-overlay.room-theory-mode .case-study-scroll-wrapper {
+  background-color: #0c0c0c;
+  color: var(--color-white);
+  padding: 6rem 4rem;
+}
+
+.case-study-overlay.room-theory-mode .case-study-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Room Theory Global Classes */
+.room-theory-bg-black { background-color: #0c0c0c; color: var(--color-white); }
+.room-theory-divider { height: 1px; background-color: rgba(255, 255, 255, 0.1); width: 100%; margin: 2rem 0; }
+
+.room-theory-section {
+  padding: 5rem 0;
+  text-align: left;
+}
+.room-theory-hero {
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+.room-theory-main-title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.room-theory-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 4rem 0;
+  text-align: left;
+}
+.room-theory-meta-label {
+  font-family: var(--font-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+.room-theory-meta-value {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-white);
+}
+.room-theory-2col {
+  display: flex;
+  gap: 4rem;
+}
+.room-theory-2col .col-left { flex: 1; }
+.room-theory-2col .col-right { flex: 1.5; }
+.room-theory-2col h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+}
+.room-theory-2col h2 i { font-style: italic; color: #ddd; font-weight: normal; }
+.room-theory-2col p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin: 0 0 1.5rem;
+}
+.room-theory-link {
+  color: var(--color-white);
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+.room-theory-link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .case-study-overlay.room-theory-mode .case-study-scroll-wrapper {
+    padding: 4rem 2rem;
+  }
+  .room-theory-2col {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .room-theory-meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
