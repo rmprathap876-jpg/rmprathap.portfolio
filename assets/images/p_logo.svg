@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#121212"/>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE259" />
+      <stop offset="100%" stop-color="#FFA751" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="55%" 
+        font-family="'Outfit', 'Inter', system-ui, sans-serif" 
+        font-size="220" 
+        font-weight="800" 
+        fill="url(#gold)" 
+        text-anchor="middle" 
+        dominant-baseline="middle">@p</text>
+</svg>
